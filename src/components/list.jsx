@@ -1,9 +1,9 @@
-const list = ["a", "b", "c"];
+import ListRow from "./list-row.jsx";
 
-const List = () => (
+const List = ({ list, setList }) => (
   <ul>
     {list.map((item) => (
-      <li key={item}>{item}</li>
+      <ListRow key={item.id} item={item} setList={setList} />
     ))}
   </ul>
 );
