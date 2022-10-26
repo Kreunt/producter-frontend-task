@@ -17,8 +17,9 @@ const ListRow = ({ item, setList }) => {
 
   return (
     <li className="list-row" key={item.id}>
-      <p className={item.completed ? "done-text" : "text"}>{item.text}</p>
-      <button onClick={handleDone}>Done</button>
+      <p className={item.completed ? "done-text" : "text"} onClick={handleDone}>
+        {item.text}
+      </p>
     </li>
   );
 };
