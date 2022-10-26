@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./header.jsx";
+import Header from "./header/Header";
 import List from "./list.jsx";
 import Form from "./form.jsx";
 import idCreator from "../utils/idCreator.js";
