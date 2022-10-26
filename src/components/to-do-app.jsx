@@ -8,15 +8,17 @@ export const ToDoApp = () => {
   const [input, setInput] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setList([
-      ...list,
-      {
-        id: idCreator(),
-        text: input,
-        completed: false,
-      },
-    ]);
-    setInput("");
+    if (input) {
+      setList([
+        ...list,
+        {
+          id: idCreator(),
+          text: input,
+          completed: false,
+        },
+      ]);
+      setInput("");
+    }
   };
   const handleChange = (e) => {
     e.preventDefault();
