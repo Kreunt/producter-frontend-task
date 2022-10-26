@@ -4,9 +4,7 @@ import List from "./list.jsx";
 import Form from "./form.jsx";
 import idCreator from "../utils/idCreator.js";
 export const ToDoApp = () => {
-  const [list, setList] = useState([
-    { id: 0, text: "Learn React", completed: false },
-  ]);
+  const [list, setList] = useState([]);
   const [input, setInput] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
