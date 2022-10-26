@@ -3,3 +3,11 @@
   max-width: 30%;
   margin: 0 auto;
 }
+
+button {
+  padding: 5px 10px;
+}
+
+input {
+  padding: 5px 10px;
+}
