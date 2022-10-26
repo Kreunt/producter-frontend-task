@@ -1,13 +1,13 @@
-const Form = ({ handleChange, handleSubmit }) => {
+const Form = ({ input, handleChange, handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
-      <label>Enter new task: </label>
       <input
         placeholder="Enter new task..."
         type="text"
         onChange={handleChange}
+        value={input}
       />
-      <button type="submit">Add</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };

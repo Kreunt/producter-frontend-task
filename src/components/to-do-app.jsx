@@ -26,7 +26,11 @@ export const ToDoApp = () => {
     <div>
       <Header />
       <List list={list} setList={setList} />
-      <Form handleChange={handleChange} handleSubmit={handleSubmit} />
+      <Form
+        input={input}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
     </div>
   );
 };
