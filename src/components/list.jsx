@@ -1,4 +1,5 @@
 import ListRow from "./list-row.jsx";
+import "../css/list.css";
 
 const List = ({ list, setList }) => (
   <ul>
